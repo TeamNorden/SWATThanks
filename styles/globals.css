@@ -1,0 +1,90 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+@media only screen and (max-width: 500px) {
+  .browser {
+    display: none;
+  }
+}
+@media only screen and (min-width: 501px) {
+  .browser {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  margin-left: 50px;
+}
+
+body {
+  color: #ffffff;
+  background: url(https://raw.githubusercontent.com/TeamNorden/SWAT/refactor/bot/assets/SWAT_BANNER.png);
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: larger;
+  font-weight: 700;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+  font-weight: 700;
+}
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+.button-fat {
+  all: unset;
+  cursor: pointer;
+}
+
+.fourohfour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000;
+}
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
