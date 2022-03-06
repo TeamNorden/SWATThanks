@@ -46,7 +46,6 @@ export default function Home() {
       <main id="info" className={styles.main}>
         <h1 className={styles.title}>
           Thanks for choosing SWAT!
-          <div className="mobile">SWAT!</div>
         </h1>
 
         <div className={styles.grid}>
